@@ -1,0 +1,25 @@
+package com.javacodes.springboot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.javacodes.springboot.repos.PostRepository;
+import com.javacodes.springboot.repos.TagRepository;
+
+@SpringBootApplication
+public class HibernateManyToManyApplication {
+	
+	@Autowired
+    private TagRepository tagRepository;
+
+    @Autowired
+    private PostRepository postRepository;
+
+	public static void main(String[] args) {
+		SpringApplication.run(HibernateManyToManyApplication.class, args);
+		
+		
+	}
+
+}

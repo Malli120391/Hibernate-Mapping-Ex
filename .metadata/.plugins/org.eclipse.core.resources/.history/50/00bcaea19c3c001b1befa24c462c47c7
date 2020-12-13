@@ -1,0 +1,5 @@
+package com.javacodes.springboot.model;
+
+public class Post {
+
+}

@@ -1,0 +1,24 @@
+package com.javacodes.springboot.controlles;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.javacodes.springboot.model.Post;
+import com.javacodes.springboot.repos.PostRepository;
+
+@RestController
+public class PostController {
+	
+	@Autowired
+	private PostRepository postRepository;
+	
+	@GetMapping("/posts")
+	public Page<Post> getAllPosts(Pageable pageable){
+		return postRepository.findAll(pageable);
+	
+	}
+
+}

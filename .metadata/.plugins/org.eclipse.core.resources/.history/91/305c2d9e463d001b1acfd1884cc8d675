@@ -1,0 +1,6 @@
+package com.javacodes.springboot.controlles;
+
+
+public class ResourceNotFoundException {
+
+}

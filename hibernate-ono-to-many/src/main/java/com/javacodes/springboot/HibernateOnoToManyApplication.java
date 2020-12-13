@@ -1,0 +1,15 @@
+package com.javacodes.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@SpringBootApplication
+@EnableJpaAuditing
+public class HibernateOnoToManyApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HibernateOnoToManyApplication.class, args);
+	}
+
+}

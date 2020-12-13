@@ -1,0 +1,10 @@
+package com.javacodes.springboot.controlles;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CommentControllers {
+	
+	
+
+}

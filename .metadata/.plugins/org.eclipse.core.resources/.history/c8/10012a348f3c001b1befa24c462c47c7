@@ -1,0 +1,33 @@
+package com.javacodes.springboot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.javacodes.springboot.model.User;
+import com.javacodes.springboot.repos.UserDetailsRepository;
+import com.javacodes.springboot.repos.UserRepository;
+
+@SpringBootApplication
+public class HibernateOnoToOneApplication implements CommandLineRunner{
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private UserDetailsRepository userDetailsRepository;
+
+	public static void main(String[] args) {
+		SpringApplication.run(HibernateOnoToOneApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		User user = new User("Malleswara","Chennu", "ch.mali120@gmail.com", "1203");
+
+		
+	}
+
+}

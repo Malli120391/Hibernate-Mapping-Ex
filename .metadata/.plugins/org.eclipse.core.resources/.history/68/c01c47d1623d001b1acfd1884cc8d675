@@ -1,0 +1,5 @@
+package com.javacodes.springboot.repos;
+
+public interface PostRepository {
+
+}

@@ -1,0 +1,13 @@
+package com.javacodes.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HibernateOnoToOneApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HibernateOnoToOneApplication.class, args);
+	}
+
+}

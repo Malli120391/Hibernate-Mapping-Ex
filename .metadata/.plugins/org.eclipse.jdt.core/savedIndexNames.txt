@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+M:\Hibernate-Mapping-Ex\.metadata\.plugins\org.eclipse.jdt.core
+4036418697.index
+2246814950.index
+2703898036.index
